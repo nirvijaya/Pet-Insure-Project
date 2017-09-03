@@ -1,0 +1,20 @@
+
+
+.logo {
+
+	display: inline-block;
+	float: left;
+	margin:0;
+	height: 100px; 
+	margin-top: 0px; 
+
+
+	&.alpha 
+	{
+			height: 80px;
+			width: 210px;
+			/*margin: 0 0 0 100px;*/
+	}
+
+
+}

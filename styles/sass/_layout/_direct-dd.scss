@@ -1,0 +1,42 @@
+@import "../_variables";
+
+.pl-0px {
+    padding-left: 0px;
+}
+
+.w-30perc {
+    width:30% !important;
+}
+
+.w-60perc {
+    width:60%;
+}
+.sort-code-text {
+    width:18.8% !important;
+}
+.ml-5px{
+    margin-left: 5px !important;
+}
+.pay-by-dd{
+	padding:0 5px;
+}
+.pay-by-dd .selectboxit-container .selectboxit{
+    width:177px !important;
+}
+
+
+.pay-by-dd .selectboxit-arrow-container {
+    width:35px;
+}
+
+.pay-by-dd .level-1, .pay-by-dd .level-2 {
+  font-size: 0.99em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #144B94;
+}
+.pay-by-dd .level-2 {
+  color: #4D4D4D;
+}
+

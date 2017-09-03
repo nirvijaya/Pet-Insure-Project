@@ -1,0 +1,282 @@
+
+
+@import "../_modules/_buttons-mobile";
+@import "../_modules/_forms-mobile";
+@import "_modules/_images-logos-mobile";
+
+@import "../variables";
+
+body{
+	font-size:1em;
+}
+
+h1{
+    font-size: $h1-font-size-mobile;
+}
+.footer img {
+     padding: 10px 0 !important;
+}
+
+
+.footer > *{
+     text-align:center;
+}
+
+.tesco-container{
+	.outer-border{
+	}
+
+	.block-style{
+		.header{ 
+           &:before{}
+		}
+
+		.body{
+			position:relative;
+			//padding:0 10px; changed 13 june
+			.question{
+				 border-bottom:1px solid $panel-grad-border-color1;
+				 padding:25px 10px; //changed 13 june
+				.first{ padding:0}
+				.gap{}
+				.btn-group{
+					button{ min-width:105px;}
+				}
+				&:last-child{
+					border:0;
+				}
+			}
+            
+            .confirmation{ /* ashok - this whole class */
+                & > input{
+                    width:auto;
+                }
+              }
+		}
+
+		.blue-box{
+		    margin:0; 
+			.question{
+				padding:15px 0;
+				border:0;
+			}
+
+		}
+		.input-small{width: 30% !important;} //16 june  /* added important by ashok  */
+				.slide{}
+ 		.confirm-of-buy-mobile{/* july */
+			@include background-image(linear-gradient(#b3c9e0, #d9e4ef));
+			position: relative;
+		    padding: 20px;
+		    border-radius: 2px;
+		}
+
+ .white-box{ /* 26-june*/
+    background: #fff;
+    padding:20px;
+    border-radius:5px;
+ }
+	}
+
+	.adj-block-style{ /*july*/
+	    .adj-confirm-left{
+	        margin-right: 15px;
+	    }
+	}
+
+}
+
+
+.border-none{
+	border:0;
+}
+
+/*13 June*/
+ header{border:none; box-shadow:none; height:auto;}
+.logo.alpha {background-position: center center; display: block; float: none; margin: 0 auto; text-align: center; width:209px;}
+.file { margin:6px 0px 6px 0px; display:inline-block;}
+.body.mobilebody {padding: 0 !important;}
+.question.mobilequest {padding-left: 10px !important;padding-right: 10px !important;}
+.paymentdescp{ margin:10px 0 0 10px;}
+/*13 June*/
+
+
+.hide-with-space{
+    visibility:visible;
+}
+
+.mobile-pd-0{
+	padding:0;
+}
+
+//Added 17th
+
+.features-table-header span{
+    font-size: 13px !important;
+    font-weight:normal !important;
+}
+.small-select-btn {
+    width:100%;
+}
+.features-table-header span.amount{
+    font-size: 16px !important;
+    font-weight:bold !important;
+}
+.features-top-align {
+    padding-top:28px !important;
+}
+
+.feature-details{ line-height:14px;}
+
+.cover-detail{ text-align:center}
+#save-quote{
+    width:80%;
+    left:9%;
+}
+
+.moredetails {
+    width:100%;
+}
+.hide-with-space{
+    background-color:#f7f9fc !important;
+}
+.youragreement {
+    font-size:.9em;
+}
+
+// added from media query page.
+
+	.features-top-align{
+		padding-top:32px;
+	}
+	.period{
+	width:40%;
+	}
+
+	.pdf-mobile-margin{
+		margin-top:10px;
+	}
+	.small-btn-quote{
+	width:45%;
+	}
+	.desktop-amt{
+		margin-left:0;
+		width:75% !important;
+		margin-top: 5px;
+	}
+	
+	.md-pd-0-mobile{
+	margin:0;
+    padding:0;
+}
+
+.features-top-align{
+// padding-top:9px!important;	
+}
+
+ .sort-code-text {
+        width:25%!important;
+    }
+
+    /*23 June PN*/
+.dog-cat-content{
+ 	padding-top:20px;
+	padding-right:50px !important;
+	padding-bottom:40px !important;
+	padding-left:50px !important; 
+	}
+	
+	.quote-ref-head{
+    margin-top: 0px; 
+    padding:30px 0 15px 10px;  
+    color:$primary-color-beta; 
+    font-size: 1.45em; 
+    margin-bottom: 0px;
+}
+
+
+.retrieve-quote-botton{
+    float:right!important;
+    width:100%;
+}
+
+.retrieve-quote-question{
+    padding-top: 0!important;
+}
+
+.breadcrumb ul{ font-size:12px;}	
+.breadcrumb ul li.breadcrumb_block2 a span, .breadcrumb ul li.breadcrumb_block3 a span{ padding-right:77px;}
+	
+.forgotborder{ border-bottom:none!important;}
+
+.pd-right-0-mobile{// 26-june
+	padding-right:15px !important;
+}
+
+.info {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-left-radius: 5px;
+    border-color: -moz-use-text-color -moz-use-text-color #d0dbea #d0dbea;
+    border-image: none;
+    border-style: none none solid solid;
+    border-color: #d0dbea;
+    border-width: 0 0 1px 1px;
+    padding: 15px ;
+    position: absolute;
+    top: 0;
+    background: url("../../images/help.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    background-position: center center !important;
+    height: 30px !important;
+    margin-left: 0px;
+    margin-top: 0px !important;
+    right: -1px; 
+    width: 30px !important;
+    z-index: 10000;
+  }
+
+.pd-rt-5-mob{
+	padding-right:5px !important;
+}
+
+.pd-lt-8-mob{
+	padding-left:8px !important;
+}
+
+.what-you-pay {
+    padding-top: 100px;
+}
+.feature-details-amount{
+	padding:22px 0;
+}
+.feature-details .help-icon{
+	margin-right:5px;
+}
+.continue-app{
+	width:100%;
+}
+.quote-ref-head {
+	font-size: 1.3em;
+	padding: 20px 0 10px 10px;
+}
+ .retrieve-quote-question{
+    padding: 0px 10px !important;
+ }
+
+.backbutton {
+    padding-left:20px !important;
+    line-height:33px !important;
+}
+.backbutton img{
+	padding:3px !important;
+}
+
+#pay-method{
+	margin-left:5px;
+}
+.payoption .button {
+    width: 45% !important;
+}
+

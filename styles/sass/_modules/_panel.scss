@@ -1,0 +1,555 @@
+@import "../variables";
+@import "../_base/_base-styles"; /* changed 13th june*/
+
+.panel {
+    @include background-image(linear-gradient($panel-grad-color-from,$panel-grad-color-to));
+    padding: 0;
+    border:1px solid $panel-grad-border-color2;
+    
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        border: solid 1px $panel-grad-border-color1;
+        min-width: 100.6%;
+        padding-bottom: 0px;
+        min-height: 105%;
+        z-index: 10;
+        border-radius: 5px;
+    }
+    
+    .header {
+        border-bottom: 1px solid $panel-grad-border-color2;
+        padding:9px 20px;/* changed 12th june*/
+        position: relative;
+        color:$blue-font-color;
+        font-weight: bold;
+        font-size: 1.5em;   /*  //21px changed 12th june*/ 
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            border-bottom: solid 1px $panel-grad-border-color1;
+            min-width: 100.6%;
+            padding-bottom: 0px;
+            min-height: 105%;
+            z-index: 10;
+            
+        }
+    }
+    
+    .body {
+        padding-top: 20px;/* changed 12th june*/
+        padding-bottom: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+      
+        h4 {
+            margin:0;
+        }
+        
+        .list-item {
+            padding: 10px;
+            padding-left: 20px;
+           
+            &:first-child {
+                padding-top: 20px;
+            }
+            &:before{
+                 
+                  /* For a round bullet */
+                  content:'\2022';
+                  /* For a square bullet */
+                  /*content:'\25A0';*/
+                  display: block;
+                  position: relative;
+                  max-width: 0px;
+                  max-height: 0px;
+                  left: -20px;
+                  top: -5px;
+                  color:$blue-font-color;
+                  font-size: 1.714em;  //24px
+                
+            }
+        }
+        
+        .confirmation {
+            @include background-image(linear-gradient($panel-grad-color-from,$panel-grad-color-to));
+            border:1px solid $panel-grad-border-color2;
+            padding: 10px;
+            position: relative;
+            border-radius: 4px;
+            
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                border: solid 1px $panel-grad-border-color1;
+                min-width: 100.7%; 
+                padding-bottom: 10px;
+                min-height: 107%;
+                z-index: 10;
+                border-radius: 5px;
+            }
+            
+            input[type='checkbox']{
+                z-index: 100;
+                cursor: pointer;
+                 padding-left: 0;
+            }
+            label {
+                padding-left: 0;
+                margin-bottom: 0;
+                z-index: 99;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.tesco-container{
+      margin-bottom:30px;
+    .outer-border{
+        border:1px solid $panel-grad-border-color1;
+        margin:0;
+        padding:0;
+        border-radius: 5px;
+
+    }
+    .block-style{
+        position:relative;
+        @include background-image(linear-gradient($panel-grad-color-from,$panel-grad-color-to));
+        margin:0;
+        padding:0;
+        border:1px solid $panel-grad-border-color2;
+        border-radius: 4px;
+        
+        .header {
+        border-bottom: 1px solid $panel-grad-border-color2;
+        padding-top: 7px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        color:$blue-font-color;
+        font-weight: bold;
+        font-size: 1.5em;  /* //21px  changed 12th june*/
+        margin:0px;
+            
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            border-bottom: 1px solid $panel-grad-border-color1;
+            min-width: 100.6%;
+            padding-bottom: 0px;
+            min-height: 105%;
+            z-index: 10;
+            
+        }
+    }
+   .body {
+       //padding:0 20px;   /* 13 june */
+    .question{
+        position:relative;
+        padding:0px 20px 25px 20px;/* changed 13th june*/
+        font-size:1.071em; //15px
+        font-weight:bold;
+        .first{
+            padding-top:20px;/* changed 12th june*/
+        }
+        .gap{
+            margin-bottom:6px;
+        }
+        .btn-group {
+            button{
+            min-width:98px;
+            font-weight:normal;
+            margin:0 1px 3px 0; /* 18 jun*/
+        }
+      }
+    }
+     
+ .question-specific{ /* 25-june*/
+        position:relative;
+        padding:0px 20px 25px 20px;
+        font-size:1.071em; //15px
+        
+        .first{
+            padding-top:25px;
+        }
+
+        .gap{
+            margin-bottom:6px;
+        }
+
+      }
+
+      .question-specific-2{ /*25 june */
+            position:relative;
+            padding:0px 20px 15px 20px;
+            font-size:0.857em; //12px
+
+            .head-15{
+                font-size:15px;
+                font-weight:bold; 
+                padding:15px 0;
+                position: relative;
+                right: 20px;
+            }
+
+            .first{
+                padding-top:15px;
+            }
+
+            .gap{
+                margin-bottom:6px;
+            }
+
+      }
+    ul.change{ /* 13 june */
+        @extend .normal;
+    list-style-type: none;
+    position: relative;
+    margin-left: 1em;
+    padding-left: 0;
+    & li{
+        & a{color:#144b94; 
+            text-decoration:underline;
+            }
+        }
+   }
+   
+   li.list-item{ margin-bottom:20px;}
+   li.list-item:before { /* 13 june */
+    content: "\2022";
+    position: absolute;
+    left: -1em;
+    color: $blue-font-color;
+    margin-right: 5px;
+    font-size: 20px;
+    top: -3px;
+  }
+
+    .move-para{ 
+        @extend .normal;
+        padding:0 0 0 20px;
+    }
+
+    .confirmation{ 
+        border:1px solid #d3edd6;
+        padding:10px 20px 10px 15px;
+        background-color:#f4fbf5;
+        & > input{
+            width:3%;
+        }
+      }
+    
+  }
+  
+  
+    .blue-box{
+    background-color: #DEE8F1;
+     padding: 10px;
+    /*margin: 0px 0px 25px 0px;  ashok changed margin left & right to 0 */
+    border-radius: 5px;
+    position: relative;
+    left: 0;
+    }
+    
+
+     .slide{
+        padding:10px;   
+        font-size: 1.286em;  //18px
+        font-weight:bold;
+        color:$blue-font-color;
+        
+        h2 {
+            color: #144b94;
+            display: inline;
+            font-size: 1.12em;
+        }
+        .icon {
+        font-size: 14px; //12px
+        color:#144b94;
+        border-radius:13px;
+        padding:4px;
+        z-index: 999;
+        border:1px solid #e5e5e4;
+        background:#dce4ef;
+
+      }
+ }
+ .confirm-of-buy{ /* july*/
+    position: relative;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 5px;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+ }
+
+ .white-box{ /* 25-june*/
+    background: #fff;
+    padding:10px;
+    border-radius:5px;
+ }
+}
+.adj-block-style{ /*july*/
+    border:none;
+    border-radius:0;   
+    @include background-image(linear-gradient(#b3c9e0, #d9e4ef));
+    .header{
+    border-bottom:none;
+    &:before{
+    left:0px;
+    }
+    }
+    .adj-confirm-left{
+        @include background-image(linear-gradient($panel-grad-color-from,$panel-grad-color-to));
+        padding: 0 !important;
+        margin-left: 15px;
+        margin-right: -15px;
+    }    
+    }
+}
+
+
+.input-small{  //16 june
+        width: 77px !important;
+        min-width: 50px;
+        margin-right: 5px;
+        text-align: center;
+        padding-left: 0px!important;
+    }
+.cover-name{
+    font-size:14px;/* 17th june*/
+    font-weight:bold;
+    padding:0px;
+    margin-bottom:5px;/* 17th june*/
+    
+    a{
+        text-decoration: underline; /*Added by sindhura 25 june */
+        color:#144b94; /*Added by sindhura 25 june */
+    }
+ }
+ .cover-detail{
+    font-size: 11px;
+    padding:0px;
+    
+    a{
+        text-decoration: underline; /*Added by sindhura 25 june */
+        color:#144b94; /*Added by sindhura 25 june */
+    }
+ }
+ 
+ 
+  .add-other-pet{
+    a{
+        color:#144b94; /*Added by sindhura 25 june */ 
+        text-decoration: underline; /*Added by sindhura 25 june */
+    }
+ }
+ 
+ .cover-detail-biger{
+    font-size: 14px!important;
+ }
+ 
+ .cover-detail-small{
+    font-size: 12px!important;
+ }
+ 
+.paymenttxtbdr{/* changed 12th june*/   
+    border-bottom: 1px dashed #ccdbea;
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+}
+
+.paymenttxt{
+    font-size: 15px;
+    padding-bottom:25px;
+    padding-top:10px;
+    }
+    
+
+ ///added 15th june
+ .cover-detail{
+    font-size: 11px;
+    padding:0px;
+    margin-bottom: 10px;
+    p{
+    margin-top:-8px;
+    }
+    }
+    
+.cover-detail table td, th{
+    padding: 0;
+    width: 44%;
+    vertical-align:text-top;
+    }
+
+//added 16th
+.cover-detail-price {
+    font-size: 11px;
+    line-height: 0;
+}
+
+.policytextcolor{/* changed 19th june*/
+            color:#004995;
+}
+
+
+.quote-ref-head{
+    margin-top: 0px; 
+    padding:20px 0 10px 20px;
+    color:$primary-color-beta; 
+    font-size: 1.45em; 
+    margin-bottom: 0px;
+}
+
+.retrieve-quote-question{
+    font-weight: normal!important;
+    & .forgot-quote{
+    color:$primary-color-beta;
+    cursor:pointer;
+    }
+}
+
+.hangon{
+    @include background-image(linear-gradient(#4d80b5,#004995));
+    border-radius: 5px;
+    overflow: auto;
+    padding:18px 10px 32px 23px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;
+      p{
+        font-size:16px;
+        font-weight:normal;
+        color:#ffffff;
+        }
+
+}
+
+.retrieve-quote-botton{
+    float:right!important;
+    width:48%;
+}
+
+
+.timed-out-list{
+    font-size: 12px;
+    margin-bottom: 65px;
+    li{
+        list-style: disc inside none;
+        padding-top: 35px;
+    }
+}
+.border-bottom{
+      border-bottom: 1px solid #d0dbea;
+}
+
+.timed-out-img{ margin-top:-25px; position: relative; 
+top: 5px;}
+
+
+
+.image_curve{ display:none!important;}
+
+
+
+li.list-arrow:before{/* 25 june*/
+    content: ">";
+    font-size: 15px;
+    left: 1px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+li.list-arrow {/* 25 june*/
+    padding-bottom:15px;
+}
+
+li.list-arrow > a {
+    position: relative;
+    top: 5px;
+    color:#4d4e4e;
+    text-decoration:underline;
+}
+
+h1.panel-header{
+    font-size:21px;
+    margin:0px;
+    padding: 7px 20px 10px;
+}
+
+/*#datetimepicker1{
+    display: block;
+    float: left;
+    width: 100%;
+    display: block;
+    #date{
+        width:145px;
+        background-color:$primary-color-alpha !important;
+    }
+    .calendar{
+        background-image: url("../../images/calender_icon.png");
+        background-position: 50% center;
+        background-repeat: no-repeat;
+        float: left;
+        height: 44px;
+        width: 27px;
+    }
+}*/
+
+.visible-320{
+    display:none !important;
+}
+#postal-num{
+    margin-right:3px;
+}
+.monthly-pay-dropdown{
+	width:60%;
+}
+.forgot-quote-ref{
+    color:$primary-color-beta;
+}
+
+.timeout-heading{
+     line-height: 24px !important;
+}
+.confirmation-heading{
+    line-height: 24px !important;
+    font-size: 1.25em !important;
+}
+.confirmation-heading{
+    color:$primary-color-beta !important;
+    font-size: 1.1em !important;
+    margin:5px 0 3px 0 !important;
+}
+.backbutton{
+    padding-left:22px !important;
+}
+
+.timeout-heading{
+    font-size: $h3-font-size;
+}
+
+.yourcover-heading2{
+    font-size: $h4-font-size;
+    color:$primary-color-beta;
+    margin: 0px!important; 
+}
+
+.panal-h3{
+    margin: 0px!important;
+}

@@ -1,0 +1,19 @@
+@import "../_variables";
+input:not([type='checkbox']):not([type='radio']){
+	width:100%;
+    &:focus{
+    	
+    }
+}
+
+.dropdown-up-style{
+	left:258px;
+}
+
+.input-medium {
+	width:50% !important;
+}
+
+ .specific-input{
+ 	width:50% !important;
+ }

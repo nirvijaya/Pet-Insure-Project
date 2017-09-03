@@ -1,0 +1,138 @@
+
+
+@import "../_modules/_buttons-mobile";
+@import "../_modules/_forms-mobile";
+@import "_modules/_images-logos-mobile";
+
+@import "../variables";
+
+body{
+	font-size:1em;
+}
+
+h1{
+    font-size: $h1-font-size-mobile;
+}
+.footer img {
+     padding: 10px 0 !important;
+}
+
+
+.footer > *{
+     text-align:center;
+}
+
+.tesco-container{
+	.outer-border{
+	}
+
+	.block-style{
+		.header{ 
+           &:before{}
+		}
+
+		.body{
+			position:relative;
+			//padding:0 10px; changed 13 june
+			.question{
+				 border-bottom:1px solid $panel-grad-border-color1;
+				 padding:25px 10px; //changed 13 june
+				.first{ padding:0}
+				.gap{}
+				.btn-group{
+					button{ min-width:105px;}
+				}
+				&:last-child{
+					border:0;
+				}
+			}
+            
+            .confirmation{ /* ashok - this whole class */
+                & > input{
+                    width:auto;
+                }
+              }
+		}
+
+		.blue-box{
+		    margin:0; 
+			.question{
+				padding:15px 0;
+				border:0;
+			}
+
+		}
+		.input-small{width: 30% !important;} //16 june  /* added important by ashok  */
+		.slide{}
+
+	}
+
+}
+
+
+
+.border-none{
+	border:0;
+}
+
+/*13 June*/
+ header{border:none; box-shadow:none; height:auto;}
+.logo.alpha {background-position: center center; display: block; float: none; margin: 0 auto; text-align: center; width:209px;}
+.file { margin:6px 0px 6px 0px; display:inline-block;}
+.body.mobilebody {padding: 0 !important;}
+.question.mobilequest {padding-left: 10px !important;padding-right: 10px !important;}
+.paymentdescp{ margin:10px 0 0 10px;}
+/*13 June*/
+
+
+.hide-with-space{
+    visibility:visible;
+}
+
+.mobile-pd-0{
+	padding:0;
+}
+
+//Added 17th
+
+.features-table-header span{
+    font-size: 12px !important;
+    font-weight:normal !important;
+}
+.features-table-header .rep{
+	font-size: 11px;
+}
+.small-select-btn {
+    width:100%;
+}
+.features-table-header span.amount{
+    font-size: 16px !important;
+    font-weight:bold !important;
+}
+.features-top-align {
+    padding-top:28px !important;
+}
+
+.feature-details{ line-height:14px;}
+
+.cover-detail{ text-align:center}
+#save-quote{
+    width:80%;
+    left:9%;
+}
+h1{
+	font-size:1.5em;
+}
+
+.moredetails {
+    width:100%;
+}
+.hide-with-space{
+    background-color:#f7f9fc !important;
+}
+.youragreement {
+    font-size:.9em;
+}
+
+
+

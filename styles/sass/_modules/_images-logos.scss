@@ -1,0 +1,250 @@
+.norton-image {
+    background-image: url("../../images/norton-safe.png");
+    background-repeat: no-repeat;
+    height: 58px;
+    width: 224px;
+}
+
+
+.read-your-agreement {
+/*	background-image: url("../../images/read-your-agreement.png");*/
+	background-repeat: no-repeat;
+	height: 35px;
+	width: 230px;
+	margin: 20px 0 0px 0;
+
+}
+
+.select-your-cover {
+/*	background-image: url("../../images/select_your_cover_text.png");*/
+	background-repeat: no-repeat;
+	height: 39px;
+	width: 245px;
+	margin-top: 20px;
+	position: relative;
+	left:25%;
+}
+
+.checked-image {
+/*	background-image: url("../../images/checked.png");*/
+	background-repeat: no-repeat;
+	height:19px;
+	width:16px;
+	margin:3px 0px 20px 45%;
+}
+
+.unchecked-image {
+/*	background-image: url("../../images/unchecked.png");*/
+	background-repeat: no-repeat;
+	height:19px;
+	width:16px;
+	margin:3px 0px 20px 45%;
+}
+
+.important-info{
+	background-image: url("../../images/important_info_text.png");
+	background-repeat: no-repeat;
+	height:25px;
+	width:231px;
+	margin: 0px 0 10px 0;
+}
+
+.lets-get-started {
+	background-image: url("../../images/Lets_get_started_text.png");
+	background-repeat: no-repeat;
+	height:23px;
+	width:191px;
+	margin: 0px 0 10px 0;
+}
+
+.add-two-pets{
+	background-image: url("../../images/add_two_pets_text.png");
+	background-repeat: no-repeat;
+	height:22px;
+	width:330px;
+	margin: 0px 0 10px 0;
+}
+
+.tell-about-you{
+	background-image: url("../../images/tell_bt_you_text.png");
+	background-repeat: no-repeat;
+	height:26px;
+	width:221px;
+	margin: 0px 0 10px 0;
+}
+
+.joint-policy-holder{
+	background-image: url("../../images/add_someone_else_text.png");
+	background-repeat: no-repeat;
+	height:24px;
+	width:355px;
+	margin: 0px 0 10px 0;
+}
+
+.about-your-policy{
+	background-image: url("../../images/about_policy_text.png");
+	background-repeat: no-repeat;
+	height:26px;
+	width:280px;
+	margin: 0px 0 10px 0;
+}
+
+.got-promo-code{
+    background-image: url("../../images/got_a_promo_code_text.png");
+	background-repeat: no-repeat;
+	height:21px;
+	width:200px;
+	position: relative;
+	right: 30px;
+	top: 3px;
+	/*margin: 5px 0 10px 10px;*/
+}
+
+.got-club-card{
+	background-image: url("../../images/get_clubcard_text.png");
+	background-repeat: no-repeat;
+	height:24px;
+	width:177px;
+	margin: 0px 0 10px 0;
+
+}
+
+
+.read-your-document{
+	background-image: url("../../images/read-your-document.png");
+	background-repeat: no-repeat;
+	height:29px;
+	width:341px;
+	margin: 0px 0 5px 0;
+}
+
+
+//13 june
+.dog{
+ 	margin: 0px 10px 10px 0;
+	position:relative;
+	.dog-button {
+	    width: 114px;
+		height:80px;
+		border:none;
+		background:url("../../images/dog-cat-active-inactive.png") -115px 0px;
+		cursor:pointer;
+    }
+	.dog-button:hover {
+		background-position: -115px -80px;
+	}
+	.dog-button:hover, .dog-button.selected {
+		background-position: -115px -80px;
+	}
+	.dog-disabled-button{
+		width: 114px;
+		height:80px;
+		border:none;
+		background:url("../../images/cat_dog_disabled.png") 0 0px;
+		cursor:pointer;
+	}
+	& > span{
+		position: absolute;
+        left: 40px;
+        top:90px;
+	}
+}
+
+//13 june
+
+.cat{
+	position: relative;
+     .cat-button {
+	    width: 114px;
+		height:80px;
+		border:none;
+		background:url("../../images/dog-cat-active-inactive.png") 0 -80px;
+		cursor:pointer;
+    }
+	.cat-button:hover {
+		background-position: 0px 0px;
+	}
+	
+	.cat-button:hover, .cat-button.selected {
+		background-position: 0px 0px;
+	}
+
+	.cat-disabled-button{
+		width: 114px;
+		height:80px;
+		border:none;
+		background:url("../../images/cat_dog_disabled.png") -115px 0px;
+		cursor:pointer;
+	}
+	& > span{
+		position: absolute;
+		left: 40px;
+		top:90px;
+	}
+}
+
+
+
+/*.help:after{
+  content: url("../../images/help.png");
+position: absolute;
+z-index: 100000;
+padding: 2px 5px;
+}*/
+.info {
+    background: url("../../images/help.png") no-repeat scroll 0 0 transparent;
+    height: 16px;
+    margin-left: 3px;
+    margin-top: 3px;
+    padding: 5px;
+    position: absolute;
+    width: 16px;
+    z-index: 10000;
+  }
+
+img.arrow{
+    position: absolute;
+    top:100%;/* changed 12th june*/
+    left:46%;/* changed 12th june*/
+    height: 14px;/* changed 12th june*/
+ }
+img.security_card{ margin-bottom:10px; margin-left:10px;}/* changed 12th june*/
+
+//15th june
+
+.promo-clubcard{
+/*	background-image: url("../../images/club_card_small.png");*/
+	background-repeat: no-repeat;
+	height:61px;
+	width:83px;
+}
+
+.promo-dogbed{
+/*	background-image: url("../../images/been_bag.png");*/
+	background-repeat: no-repeat;
+	height:69px;
+	width:92px;
+
+}
+
+.unselect-pet {
+	background-image: url("../../images/close_icon.png");
+	background-repeat: no-repeat;
+	height:16px;
+	width:16px;
+	z-index:4;
+	position:absolute;
+	top: -6px; 
+	left: 60px;
+}
+
+
+.dog-cat{
+ 	margin: 30px 0 15px 0;
+	}
+.dog-cat-content{
+ 	padding-top:20px;
+	padding-right:110px !important;
+	padding-bottom:40px !important;
+	padding-left:110px !important; 
+	}

@@ -1,0 +1,12 @@
+@import "compass";
+@import "compass/css3";
+@import "../_mixins/_base.scss";
+@import "../_variables";
+
+body {
+}
+
+.footer {
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(left,$gradient-blue-from,$gradient-blue-to));
+}

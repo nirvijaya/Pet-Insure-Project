@@ -1,0 +1,268 @@
+@import "compass";
+@import "compass/css3";
+@import "../_variables";
+
+.table-row{
+    overflow: hidden;
+    //margin-right: -8px;/* Added 13 june */
+}
+
+
+.payhow{
+    font-size:22px!important;
+    font-weight:bold;
+    color:$primary-color-beta;
+    margin-top:5px; /*14 july*/
+}
+
+.features-table-header{
+    background-color: $claims_table_header;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $primary-color-alpha;
+    min-height:115px;
+    min-width:80px;
+    display: table-cell;
+    vertical-align: bottom;
+    padding:10px 6px 0px 7px; /* 14 july*/
+    padding-bottom: 1000px;
+    margin-bottom: -1000px;    
+
+    & div {text-align: center; color:$primary-color-beta; 
+        & span{display: block}
+         & span.head { font-size:15px; font-weight:bold!important;}
+         & span.amount{ font-size:25px;font-weight:bold; line-height: 20px;}
+         & span.duration{ font-size:11px; font-weight:bold; padding-bottom:2px; }
+         & span.instruction{ font-size:9px; padding:2px 0 2px 0;}
+         }
+    &.features-table-row{
+         background-color: $claims_table_row;
+         & ul {text-align: center; color:$primary-color-beta;}
+         & li.head { font-size:16px; }
+         & li.amount{ font-size:$h2-font-size; }
+         & li.duration{ font-size:$h4-font-size; font-weight:bold; }
+         & li.instruction{ font-size:$h5-font-size;}
+         }
+    }
+
+
+/*text fonts in cover oprtion */
+.features-criteria{
+    font-size:12px; 
+    text-align:left;
+    font-weight:bold!important;
+}
+
+.feature-details{
+    color:$primary-color-beta;
+    font-size:11px !important;
+    padding:3px 0 3px 0;
+    & feature-details-table{
+    font-weight:normal!important;
+    }
+    span.font-9{
+    font-size:9px;
+    }
+}
+
+.feature-details-amount{
+    font-size:14px;
+    font-weight:bold;
+}
+
+
+
+.moredetails {
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient($panel-grad-color-from,$panel-grad-color-to));
+    @include filter-gradient($panel-grad-color-from, $panel-grad-color-to, vertical);
+    border: 1px solid $hover-neutral-action-button-arrow-border;
+    margin: 0 auto;
+    overflow: auto;    
+    padding: 10px;
+    font-size:$h4-font-size;
+    color:$primary-color-beta;
+    font-weight:bold;
+
+
+}
+
+//Added 15th june
+.payoption, .policy-details-pdf, .promocode{
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient($panel-grad-color-from,$panel-grad-color-to));
+    @include filter-gradient($panel-grad-color-from, $panel-grad-color-to, vertical);
+    border: 1px solid $hover-neutral-action-button-arrow-border;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 10px;/* changed 12th june*/
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+}
+
+//add 16th
+.club-card-small {
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient($panel-grad-color-from,$panel-grad-color-to));
+    @include filter-gradient($panel-grad-color-from, $panel-grad-color-to, vertical);
+    border: 1px solid $hover-neutral-action-button-arrow-border;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 0;/* changed 12th june*/
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 15px;
+   
+}
+
+.card-text {
+    font-size:12px; 
+    padding-left:0px;
+}
+
+// 15 june
+.hide-with-space{
+    visibility:hidden;
+}
+
+.promo-head{
+    font-size:16px!important;
+    font-weight:bold; 
+    color: #004995;   
+    a{
+       color:$primary-color-beta; 
+       &:hover{
+        text-decoration:none;
+       }
+    }
+}
+.promo-text{
+    font-size:12px!important;
+}
+
+
+.select-gradient{
+     background-color: $select-grad-ltbg;
+        div{
+         color:$primary-color-alpha;
+        }
+        button{
+            padding:0 15%;
+            font-weight:normal !important;
+        }
+}
+
+.selected{
+    background-color: $select-grad-dkbg !important;
+    .feature-details{
+        color:$primary-color-alpha;
+    }
+    .feature-details-amount{
+        color:$primary-color-alpha;
+    }
+    .checked-image{
+         height: 24px;
+         width: 25px;
+    }
+}
+
+.promocode .pcode {
+    padding-left: 48px;
+}
+.promocode ul {
+    padding-left: 25px;
+}
+
+.promocode{
+    width:100%;
+    padding-bottom:0px;
+    ul{
+        padding-left:25px;
+    }
+    .pcode{
+        padding-left:48px;
+    }
+}
+
+.promocode-bg{
+    margin-bottom:24px;
+    background-color:$promo-bg;
+    color:$promo-color;
+    width:95%;
+    height:150px;
+    font-size: 13px;
+    margin-left:2.5%;  
+    img{
+         position: relative;
+    }   
+    div{
+        padding-top:12px; 
+    }
+    .promo-text-lt{
+        background: url(../../images/promocode_leftimg.png) no-repeat scroll -10px -1px transparent;
+        .promo-box-heading{
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+        .promo-box-text{
+            font-size: 1.3em;
+        }
+    }
+    .promo-text-rt {
+        background: url("../../images/promocode_rightimg.png") no-repeat scroll right -1px rgba(0, 0, 0, 0);
+        height: 140px;
+        color:$primary-color-alpha;
+        p{
+        line-height: 17px;
+        padding-top: 10px;
+        text-align: center;
+            span{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+.add-other-pet{
+    font-size: 11px;
+    padding: 0px;
+    margin-bottom: 10px;
+    text-align:left;
+}
+
+.table-row{
+    margin-bottom:1px;
+}
+.help-icon{
+    margin-right:10px;
+}
+.moredetails {
+    width:74.6%;
+}
+.policy-details-pdf{
+    padding:14px;
+}
+
+.payoption .button{
+    width:35% !important;
+}
+.combobox{
+    .features-table-header{
+        margin-bottom: -150px;
+        padding-bottom: 150px;
+    }
+}
+.features-detail-align{
+    text-align: right;
+}
+.what-you-pay{ /* 14 july changed*/
+	padding-top:35%;
+}
+.table-row{
+    margin-bottom: 0px !important;
+}
+

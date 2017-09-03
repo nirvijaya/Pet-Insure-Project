@@ -1,0 +1,32 @@
+.lt-ie9 {    
+	
+    .container {
+        width: 970px !important;
+        margin-left:auto;
+        margin-right:auto;
+    }
+	.pos-chk-box {
+		display:none !important;
+	}
+	input[type='checkbox'] {
+		display:inline-block !important;
+	}
+	.policytextcolor{
+		padding-left:15px;
+	}
+
+	input[type='text'], input[type='password'], input[type='email']
+	{ 
+		line-height:38px; /*16 july*/ 
+	}
+
+
+.direct_debit_align{ padding-left:0px!important}
+
+.image_curve{left:-11px!important; position:absolute!important; display:block!important;}
+
+    @import "_grid-ie-8";
+
+	@import "_ie8-gradients";
+}
+

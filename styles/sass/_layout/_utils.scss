@@ -1,0 +1,228 @@
+@import "../_variables";
+
+/**************************************************************/
+/********** All padding ***************************************/
+/**************************************************************/
+.pd-0{
+	padding:0!important;
+}
+.pd-15{
+	padding:15px;
+}
+.pd-20{
+	padding:20px;
+}
+
+/**************************************************************/
+/********** padding top ***************************************/
+/**************************************************************/
+.pd-top-0{
+	padding-top:0px!important;
+}
+
+.pd-top-10{
+	padding-top:10px!important;
+}
+.pd-top-20{
+	padding-top:20px!important;
+}
+.pd-top-12{
+    padding-top:12px;
+}
+/**************************************************************/
+/********** padding left ***************************************/
+/**************************************************************/
+.pd-left-0{
+	padding-left:0px!important;
+}
+.pd-left-5{
+	padding-left:5px!important;
+}
+.pd-left-40{
+	padding-left:40px!important;
+}
+/**************************************************************/
+/********** padding right ***************************************/
+/**************************************************************/
+.pd-right-10{
+	padding-right:10px;
+}
+.pd-right-0 {
+    padding-right: 0px!important;
+}
+.pd-right-20{ 
+padding-right:20px; 
+}
+
+/**************************************************************/
+/********** padding bottom ***************************************/
+/**************************************************************/
+
+.pd-btm-35{
+	padding-bottom: 35px !important;
+}
+
+
+
+.pd-btm-0{ /* 25 june */
+	padding-bottom:0 !important;
+}
+.pd-btm-5{/* 25 june */
+    padding-bottom:5px !important;
+}
+
+
+
+
+/**************************************************************/
+/********** margin all ***************************************/
+/**************************************************************/
+
+.md-pd-0{
+	margin:0;
+    padding:0;
+}
+
+.md-0{
+	margin:0;
+}
+
+/**************************************************************/
+/********** margin left + right********************************/
+/**************************************************************/
+
+.m-lr-10px {
+    /* ashok added m-lr-10px class */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/**************************************************************/
+/********** margin left ********************************/
+/**************************************************************/
+.md-left-0{
+	margin-left:0px;
+}
+.md-left-10{
+	margin-left: 10px;
+}
+.md-left-15{
+	margin-left: 15px;
+}
+.md-left-20 {
+    margin-left: 20px;
+}
+
+
+/**************************************************************/
+/********** margin right ********************************/
+/**************************************************************/
+.md-right-10{
+	margin-right: 10px;
+}
+.md-right-15{
+	margin-right: 15px;
+}
+
+.md-right-45{/* changed 12th june*/
+	margin-right: 45px;
+}
+
+/**************************************************************/
+/********** margin top ********************************/
+/**************************************************************/
+.m-t-0{
+    margin-top: 0px !important;
+}
+
+.md-top-10{
+	margin-top: 10px;
+}
+
+.md-top-15{
+	margin-top: 15px;
+}
+
+.md-top-20{
+	margin-top: 20px;
+}
+
+.mt-30px{
+    margin-top: 30px;
+}
+
+.mrgT30{margin-top:50px}
+
+/**************************************************************/
+/********** margin bottom ********************************/
+/**************************************************************/
+
+.md-btm-25{/* changed 12th june*/
+	margin-bottom: 25px;
+}
+
+.md-bt-45{
+	margin-bottom: 45px;
+}
+
+.md-bt-65{
+	margin-bottom: 65px;
+}
+
+.md-btm-15{
+	margin-bottom: 15px !important;
+}
+
+.md-btm-10{
+	margin-bottom: 10px !important;
+}	
+.md-btm-5{
+	margin-bottom: 5px !important;
+}
+.md-btm-0{
+	margin-bottom: 0px !important;
+}
+/**************************************************************/
+/********** Other Utilities ********************************/
+/**************************************************************/
+
+
+.small-font{
+	font-size:12px;
+	line-height: 25px;
+}
+
+.blue-text {
+    /* added by ashok */
+    color: $primary-color-beta;
+}
+
+.max-w-9em{
+    width: 3em;
+}
+
+.position-rel {
+    position: relative;
+}
+
+.tp-15{
+    top:15px!important;
+}
+
+.text-right{
+	text-align:right;
+}
+
+.block{
+	display:block;
+}
+.no-border{
+	border:none !important;
+}
+.normal-txt {
+	font-weight: normal !important;
+}
+.underline {
+    text-decoration: underline;
+}
+

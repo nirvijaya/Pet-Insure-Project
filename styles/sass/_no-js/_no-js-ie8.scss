@@ -1,0 +1,11 @@
+.no-js 
+{
+	&.lt-ie9 {
+		
+		.innerContainer {
+        width: 970px !important;
+        margin-left:auto;
+        margin-right:auto;
+    	}
+	}
+}

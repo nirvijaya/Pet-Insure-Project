@@ -1,0 +1,120 @@
+		
+		.blue-box.primary {
+            position: relative;
+            background-color: #5F8DBC;
+            border-radius: 5px;/* changed 12th june*/
+            -webkit-background-clip: padding-box;
+            padding: 10px 15px 25px ;/* changed 12th june*/ /* changed by ashok */
+        }
+		
+		
+		.blue-box.primary:after {
+            right: 100%;
+            top: 15%;
+            content: " ";
+            position: absolute;
+            pointer-events: none;
+            border-right-radius: 5px;
+            margin-top: -30px;/* changed 12th june*/
+			background:url("../../images/arrow_curve_left.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;/* changed 12th june*/
+			height:33px;/* changed 12th june*/
+			width: 11px;/* changed 12th june*/
+		}
+
+        .blue-box.primary-quote{
+            @extend .blue-box.primary;
+        }
+		
+		.blue-box.primary-quote:after{
+            @extend .blue-box.primary:after;
+            top:6%;
+        }
+		      .blue-box.confirmation-buy{ 
+          @extend .blue-box.primary;
+      }
+
+      .blue-box.confirmation-buy:after{
+          @extend .blue-box.primary:after;
+          top:20%;
+      }
+
+        .blue-box .heading{
+           // font-size: 28px;
+            color: $blue-box-heading-color;
+			margin-top:0px;/* changed 12th june*/
+			text-shadow:0 0 2px #D4D4D4/* changed 12th june*/
+        }
+
+        .steps {  
+            margin-top : 200 px;
+            background-color: #336DAA;
+            color: white;
+            position: relative;
+            border-color: darkblue;
+            border: 1px dashed #004995;/* changed 12th june*/
+            margin-top: 10px;
+			      padding:4px 9px 4px 9px ;/* changed 12th june*/
+              & > .options{ /* 14 july*/
+                font-size: 0.99em;
+                font-weight: bold;
+              }
+              
+        }
+
+        .steps.open {
+            
+            margin-top : 200 px;
+            background-color: #D8E3EF;
+            color: #004995;
+            position: relative;
+            border-color: darkblue;
+            border: 1px dashed #004995;/* changed 12th june*/
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+       .blue-box.secondary {
+            padding: 15px 20px;
+            background-color: #5F8DBC;
+            border-radius: 5px;
+            padding-bottom: 20px;
+           
+           .heading {
+               
+                /* ashok added this class */
+               color: $blue-box-heading-color;
+               margin-bottom: 5px;
+           }
+           .call-info {
+               color: white;
+               font-size: 1.271em;  //22px /* ashok changed this */
+				font-weight:bold;
+               .call-no {
+                    /* ashok added this class */
+                   font-size: 1.2em;   
+               }
+           }
+        }
+        .rhs-h3{
+          margin:3px 0;
+          width:85% !important;
+          font-size:14px !important;
+        }
+        .img-checked{ /* 14 july changed*/
+          position: absolute;
+          right: 8px;
+          top: 7px;
+          width:21px;
+          height:21px;
+        }
+        h3.cover-name{
+          margin:0px;
+        }
+        h3.heading{
+          font-size: 1.5em;
+        }
+        input#pay{
+        width:150px !important;
+        }

@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Theme styles: default theme for the application
+   ========================================================================== */
+@import "compass";
+@import "compass/css3";
+@import "_variables";
+@import "_mixins";
+
+
+/* THEME FILES IMPORT */
+@import "_theme/_base-theme";
+@import "_theme/_logo-theme";
+@import "_bootstrap/_bootstrap";
+@import "_bootstrap/_bootstrap-overrides";
+@import "_bootstrap/_bootstrap-theme";

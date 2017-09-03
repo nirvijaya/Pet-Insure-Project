@@ -1,0 +1,27 @@
+.file {
+    padding-left: 30px;/* changed 12th june*/
+	font-size:14px;/* changed 12th june*/
+	font-weight:bold;/* changed 12th june*/
+	color:#004995;/* changed 12th june*/
+	padding-bottom:3px;/* changed 12th june*/
+    
+    &.pdf{
+        background-image: url('../../images/pdf-icon.png');
+        background-repeat: no-repeat;
+	
+		a.policytextcolor{/* changed 12th june*/
+			color:#004995;
+		
+			&.policytxtnormal{/* changed 12th june*/
+				font-weight:normal;
+			
+			}
+			
+		}
+	
+    }
+	
+	
+	
+}
+

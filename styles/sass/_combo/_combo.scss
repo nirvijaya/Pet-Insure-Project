@@ -1,0 +1,50 @@
+.selectboxit-container .selectboxit{
+    width:140px !important;
+    min-width:0!important;
+    min-height: 29px;
+  }
+
+  .selectboxit-container span, .selectboxit-container .selectboxit-options a{
+     height:27px;
+     line-height: 18px;
+  }
+
+  .selectboxit-container .selectboxit-options{
+      position: relative;
+      z-index:1000;
+      border-radius: 0px;
+  }
+  .selectboxit-text {
+      color:#144b94;
+   }
+  .selectboxit-arrow-container{
+      width:25px;
+      background-image: linear-gradient(to bottom, #5a81b4, #144b94);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5a81b4', endColorstr='#144b94' , GradientType=1);
+  }
+
+  .selectboxit-default-arrow{
+      border-top: 5px solid #ffffff;
+  }
+.combobox{
+  overflow:inherit;
+  .selectboxit-container{
+  	position:absolute;
+    a{
+      line-height:25px;
+    }
+}
+}
+@media all and (min-width: 320px) and (max-width:765px) { 
+  .selectboxit-container .selectboxit{   
+    width:65px !important;
+  }
+
+  .selectboxit .selectboxit-option-icon-container {
+      margin-left:0;
+  }
+  .selectboxit-container .selectboxit-options {
+    min-width:65px !important;
+    width:65px !important;
+  }
+}

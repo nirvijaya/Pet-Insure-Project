@@ -1,0 +1,32 @@
+@import "../variables";
+
+header{
+	height: 110px; 
+	border: 1px solid #eff1f7; /* 14 june*/ 
+	box-shadow: 0px 9px 7px -13px rgba(0, 0, 0, 0.3);
+}
+
+.page-sub-header{
+    font-size: 14px;
+}
+
+.page-sub-header-blue-txt {
+    color:$blue-font-color;
+    font-weight: bold;
+}
+.page-sub-header-blue-txt-18{
+	@extend .page-sub-header-blue-txt;
+	font-size:18px;
+}
+.page-sub-header-blue-big-txt {/* changed 12th june*/
+	font-size:20px;
+	font-weight:bold;
+	color:$blue-font-color;
+}
+
+.page-sub-header-blue-medium-txt {
+    /* added by ashok */
+    font-size:1.199em;
+	font-weight:bold;
+	color:$blue-font-color;
+}

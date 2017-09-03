@@ -1,0 +1,90 @@
+@import "compass";
+@import "compass/css3";
+@import "../variables";
+@import "../_base/_base-styles"; /* changed 13th june*/
+
+/* dont need tb buttons */
+.button {
+	border-left: 1px solid #FFF;
+		border-top: 1px solid #FFF;
+		border-right: 1px solid #ACAEAF;
+		border-bottom: 1px solid #ACAEAF;
+	@include filter-gradient($inactive-button-gradient-from, $inactive-button-gradient-to, vertical);
+	&.default {
+		@include filter-gradient($inactive-button-gradient-from, $inactive-button-gradient-to, vertical);
+		&:hover {
+			@include filter-gradient($hover-button-gradient-from, $hover-button-gradient-to, vertical);
+		}	
+	}
+	/* Blue color is used for neutral action like continue */
+	&.action-neutral {
+		@include filter-gradient($inactive-neutral-action-button-gradient-from, $inactive-neutral-action-button-gradient-to, vertical);
+		&:hover {
+			@include filter-gradient($hover-neutral-action-button-gradient-from, $hover-neutral-action-button-gradient-to, vertical);
+		}	
+		.icon {
+			@include filter-gradient($inactive-neutral-action-button-gradient-from, $inactive-neutral-action-button-gradient-to, vertical);
+		}
+	}
+	
+
+	/* green color is used for positive action like buy now/accept */
+	&.action-positive {
+		@include filter-gradient($inactive-positive-action-button-gradient-from, $inactive-positive-action-button-gradient-to, vertical);
+		&:hover {
+			@include filter-gradient($hover-positive-action-button-gradient-from, $hover-positive-action-button-gradient-to, vertical);
+		}	
+
+		.icon {
+			@include filter-gradient($inactive-positive-action-button-gradient-from, $inactive-positive-action-button-gradient-to, vertical);
+		}
+ 
+	}
+}
+
+.button.default:active 
+{
+	@include filter-gradient($active-button-gradient-from, $active-button-gradient-to, vertical);
+	
+}
+
+.button.default:disabled 
+{
+		@include filter-gradient($inactive-button-gradient-from, $inactive-button-gradient-to, vertical);
+}
+
+
+.panel {
+
+    @include filter-gradient($panel-grad-color-from, $panel-grad-color-to, vertical);
+    .body {
+     
+        .confirmation {
+            @include filter-gradient($panel-grad-color-from, $panel-grad-color-to, vertical);
+
+        }
+    }
+}
+
+.tesco-container{
+    .block-style{
+        @include filter-gradient($panel-grad-color-from, $panel-grad-color-to, vertical); 
+    }
+    .adj-block-style{ /*july*/  
+    @include filter-gradient(#b3c9e0, #d9e4ef, vertical);
+    
+    .adj-confirm-left{
+        @include filter-gradient($panel-grad-color-from,$panel-grad-color-to,vertical);
+    }    
+    }
+}
+
+
+.hangon{
+    @include filter-gradient(#4d80b5, #004995, vertical);
+}
+
+.footer{
+	@include filter-gradient($gradient-blue-from, $gradient-blue-to, vertical); 
+}
+

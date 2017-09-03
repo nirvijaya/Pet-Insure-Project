@@ -1,0 +1,37 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+//All Variables
+@import "_variables/_color-variables";
+@import "_variables/_font-variables";
+
+// All the themes
+@import "_default-theme";
+
+//All the mixins
+
+//All basic typography and styles
+@import "_base";
+
+
+//All layouts
+@import "_layout";
+
+//All layouts
+@import "_modules";
+
+//All combo 
+@import "_combo/_combo";
+@import "_combo/_special-combo";
+
+//All media-queries
+@import "_media-query";
+
+// All ie8 hacks
+@import "_internet-explorer/_ie8";
+
+// All hacks for no-js
+@import "_no-js/_no-js-ie8";

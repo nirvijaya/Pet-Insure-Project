@@ -1,0 +1,122 @@
+$base-color:#000;
+$primary-color-alpha:#fff;
+$primary-color-beta:#144b94;
+$blue-box-heading-color:rgb(0,49,74);
+
+$gradient-blue-from:#144b94;
+$gradient-blue-to:#3162a1;
+
+
+/* Buttons gradient colors */
+/*
+	Box shadow parameters for compass mixins -
+	color x y blur spread inset 
+*/
+
+/* 1) Disabled Button Colors */
+$inactive-button-gradient-from:#f2f2f2;
+$inactive-button-gradient-to:#e5e5e4;
+$inactive-button-border:#e5e5e4;
+$inactive-button-border-left-top:#ffffff;
+$inactive-button-border-right-bottom:#acaeaf;
+$inactive-button-text-color:#4d4e4e;
+$inactive-button-box-shadow: rgba(0,0,0,.3), 1px, 1px, 0px;
+
+/* 2) Hover Button Colors */
+$hover-button-gradient-from:#dce4ef;
+$hover-button-gradient-to:#b8c9df;
+$hover-button-border:#144b94;
+$hover-button-text-color:#144b94;
+$hover-button-box-shadow: rgba(0,0,0,.3), 1px, 1px, 0px;
+
+/* 3) Active Button Colors */
+$active-button-gradient-from:#5a81b4;
+$active-button-gradient-to:#144b94;
+$active-button-border:#144b94;
+$active-button-text-color:#ffffff;
+$active-button-box-shadow: rgba(0,0,0,.3), 1px, 1px, 1px;
+
+
+
+
+
+$inactive-neutral-action-button-text-color:#fff;
+
+$inactive-neutral-action-button-gradient-from:#5a81b4;
+$inactive-neutral-action-button-gradient-to:#144b94;
+
+
+$hover-neutral-action-button-gradient-from:#144b94;
+$hover-neutral-action-button-gradient-to:#3162a1;
+
+$inactive-neutral-action-button-border:#144B94;
+$inactive-neutral-action-button-arrow-border:#144B94;
+
+$hover-neutral-action-button-border:#0C2F5C;
+$hover-neutral-action-button-arrow-border:#D0DBEA;
+
+
+
+$inactive-positive-action-button-text-color:#fff;
+
+$inactive-positive-action-button-gradient-from:#00874d;/* changed 12th june*/
+$inactive-positive-action-button-gradient-to:#0eac67;/* changed 12th june*/
+
+
+$hover-positive-action-button-gradient-from:#0eac67;
+$hover-positive-action-button-gradient-to:#00874d;
+
+$inactive-positive-action-button-border:#00874D;
+$inactive-positive-action-button-arrow-border:#00874d;
+
+$hover-positive-action-button-border:#006336;
+$hover-positive-action-button-arrow-border:#BDF4D8;/* changed 12th june*/
+
+/* panel vars */
+$panel-grad-color-from:#eff1f7;
+$panel-grad-color-to:#fafbfd;
+    
+$panel-grad-border-color1:#d0dbea;
+$panel-grad-border-color2:#ffffff;
+
+/* Claims Table*/
+
+$claims_table_header:#dae5fa;
+$claims_table_row:#ecf1fc;
+
+/* forms */
+$inactive-form-field-border:#e5e5e4;/*13 june*/
+$focus-form-field-border:#144b94;
+$completed-form-field-border:#144b94;
+
+$inactive-form-field-text-color:#4d4e4e;
+$focus-form-field-text-color:#144b94;
+$completed-form-field-text-color:#144b94;
+
+$inactive-form-field-dropdown-arrow-color:#4d4e4e;
+$focus-form-field-dropdown-arrow-color:#4d4e4e;
+$completed-form-field-dropdown-arrow-color:#ffffff;
+
+$inactive-form-field-dropdown-gradient-from:#f2f2f2;
+$inactive-form-field-dropdown-gradient-to:#e5e5e4;
+
+$active-form-field-dropdown-gradient-from:#f2f2f2;
+$active-form-field-dropdown-gradient-to:#e5e5e4;
+
+$completed-form-field-dropdown-gradient-from:#5a81b4;
+$completed-form-field-dropdown-gradient-to:#144b94;
+
+/* --forms */
+
+/* Pop up Window*/
+$popup-bgcolor:#edeff5;
+$select-grad-ltbg:#4d80b3;
+$select-grad-dkbg:#004a94;
+/* --Pop up Window */
+
+
+/*Promo code */
+$promo-bg:#cacce3;
+$promo-color:#1e3163;
+
+$placeholder-text:#4d4d4d;

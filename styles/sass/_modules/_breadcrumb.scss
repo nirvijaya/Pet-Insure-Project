@@ -1,0 +1,35 @@
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.breadcrumb{ height:46px;float:left; width:100%; background:none!important; border-radius:0!important; margin-top:30px; padding-left:0px!important; padding-top:0px!important}
+.breadcrumb ul{ margin:0px; padding:0px; font:normal 14px Arial, Helvetica, sans-serif; color:#000; float:left}
+.breadcrumb ul li{ margin:0px; padding:0px; list-style:none; float:left; margin-right:-31px; }
+.breadcrumb ul li a.bc_arrow{ background:url("../../images/breadcrumb_arrow.png") no-repeat scroll right -49px transparent;display: block; float: left; height: 46px;padding-right:30px;text-decoration: none;}
+.breadcrumb ul li a.active{ background:url("../../images/breadcrumb_arrow.png") no-repeat scroll right 0px transparent;display: block; float: left; height: 46px;padding-right:30px;text-decoration: none;}
+.breadcrumb ul li a span.active {background: url("../../images/breadcrumb_bg.png") no-repeat scroll 0 0px transparent!important; color:#fff!important;}
+.breadcrumb ul li a.bc_arrow span {background:url("../../images/breadcrumb_bg.png") no-repeat scroll 0 -49px transparent;color:#000;display:block;line-height:22px;padding:7px 50px 17px 18px;}
+.breadcrumb_block1{display: inline-block; float: left; position: relative; width: auto; z-index: 3;}
+.breadcrumb_block2{display: inline-block; float: left; position: relative; width: auto; z-index: 2;}	
+.breadcrumb_block3{display: inline-block; float: left; position: relative; width: auto; z-index: 1;}
+.breadcrumb ul li.breadcrumb_block2 a span, .breadcrumb ul li.breadcrumb_block3 a span{ padding-left:55px; padding-right:80px;}
+.breadcrumb ul li.breadcrumb_block3 a{ background:none; border-right:1px solid #ccdbea; padding-right:0px;}
+
+
+
+.breadcrumb ul li a span.inprogress {
+background: url("../../images/breadcrumb_bg-inprogress.png") no-repeat scroll 0 0px transparent !important;
+color: white !important;
+}
+
+.breadcrumb ul li a.inprogress {
+background: url("../../images/breadcrumb_arrow-inprogress.png") no-repeat scroll right 0px transparent;
+display: block;
+float: left;
+height: 46px;
+padding-right: 30px;
+text-decoration: none;
+}

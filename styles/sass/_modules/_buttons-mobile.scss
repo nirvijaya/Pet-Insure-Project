@@ -1,0 +1,78 @@
+@import "compass";
+@import "compass/css3";
+@import "../variables";
+
+/* dont need tb buttons */
+.button {
+	
+	min-height:50px;
+	font-size:$mobile-button-text-size;
+	&.default {
+		//width: 33%; 14 june
+	}
+
+	
+	&.number { // 19 june
+		font-size: 16px;
+		min-width: 46px !important;
+		min-height: 40px;
+		margin-right: 7px !important;
+	}
+
+	&.action-neutral, &.action-positive {
+		min-height: 60px;
+		font-size: $mobile-action-button-text-size;
+	}
+
+
+}
+
+/* all active blocks */
+.button.default:active {}
+.button.default:disabled {}
+
+
+/*13 June*/
+.backbutton,.closebutton{
+	border:1px solid #ccdbea!important;
+	border-radius:3px;
+	padding:15px 30px 15px 0px;
+	margin-left:0px;
+	width:100%; 
+	margin-top:10px;
+	padding-left:0px; 
+	text-decoration:none !important;
+	text-align:center!important
+}
+.backbutton > img{ float:left; padding-left:15px;}
+.closebutton > img{ float:right; padding-left:15px;}
+/* 14 june*/
+.back-save,.back-print{
+	border:1px solid #ccdbea!important;
+	border-radius:3px;
+	margin-left:0px;
+	width:100%; 
+	margin-top:10px;
+	width:48%;
+	padding:15px 15px 15px 15px;
+	font-size:16px;
+	text-decoration:none !important;
+	color: #004995 !important;
+	text-align:center;
+	.back-save > img, .back-print > img{ float:left; padding-left:15px;}
+	.back-save a, .back-print a{ padding-left:0px; text-decoration:none;}
+}
+
+
+.adj-btn-text-positive{/* 17 june */
+	position: relative;
+    top: 12px;
+}
+
+.small-btn-quote-mobile{
+	width:46% !important;
+}
+
+.specific-btn{
+	min-height:50px !important;
+}

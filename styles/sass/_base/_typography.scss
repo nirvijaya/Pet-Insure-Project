@@ -1,0 +1,61 @@
+@import "../_variables";
+
+/*
+* Header styles
+* 11.955 pt (adobe) == 1em;
+*/
+
+h1 { 
+    font-size: $h1-font-size;      // 22pt         
+    font-weight:bold;
+    color: $h1-font-color;
+}
+
+h2 { 
+    font-size: $h2-font-size;      // 18pt
+     font-weight:bold;
+    color: $h2-font-color
+}
+
+
+h3 { 
+    font-size: $h3-font-size;       // 14pt
+     font-weight:bold;
+}
+
+h4 { 
+    font-size: $h4-font-size;     //12pt        
+     font-weight:bold;      
+}
+
+h5 { 
+    font-size: $h5-font-size;       //11pt
+     font-weight:bold;
+}
+
+h6 { 
+    font-size: $h6-font-size ; // haven't specified         
+     font-weight:bold;
+}
+
+
+a {
+	&:hover {
+		//text-decoration: none;
+		//border-bottom: 1px solid;
+		//padding-bottom:2px;
+
+		//text-decoration:underline;
+	}
+
+	&.un-contained {
+		//text-decoration: none;
+		//border-bottom: 1px solid;
+		//padding-bottom:2px;
+	}
+}
+
+.h3{ // july
+    font-size: $h3-font-size;
+    font-weight: bold;
+}

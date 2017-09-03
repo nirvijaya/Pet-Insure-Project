@@ -1,0 +1,70 @@
+
+@import "../_variables/_color-variables";
+@import "../_variables/_font-variables";
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,body {
+   font-size:14px;
+   background:$primary-color-alpha;
+   		color:#4d4d4d;
+
+}
+
+footer {
+    margin-top: 25px;   
+}
+
+.footer {
+	color:$primary-color-alpha;
+	font-size:$body-font-size;
+    
+	a {
+	     color:$primary-color-alpha;
+	     font-size:$body-font-size;
+	     text-decoration:underline;
+	      
+        &:hover {
+	         color:$primary-color-alpha;
+	     }
+	} 
+    
+    .footer-bottom-bar{
+        margin-top: 10px;   
+        margin-bottom: 10px; 
+    }
+}
+
+.text-img{
+		margin:0px 0 8px 0;
+	}
+
+
+.relative{
+	position:relative;
+}
+
+.bold{
+	font-weight:bold;
+}
+.normal{
+    font-weight:normal;
+}
+
+.text-center{ /* 18 jun*/
+	text-align:center;
+}
+
+.text-left{
+	text-align:left;
+}
+
+
+.footer_descp{ font-size:12px; line-height:25px; margin:0px 0px 30px 0px; padding: 0;}
+
+.break-word{// 26-june
+
+	word-wrap: break-word;
+}

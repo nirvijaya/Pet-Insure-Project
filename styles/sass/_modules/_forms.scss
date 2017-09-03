@@ -1,0 +1,153 @@
+@import "../_variables";
+/*input:not([type='checkbox']):not([type='radio']){*/
+	input[type='text'], input[type='password'], input[type='email'],select {
+
+	outline:none;
+	font-size:$form-text-size;
+	font-weight:normal;/* changed 12th june*/
+	min-height:44px;
+	//max-width:300px; 16june
+	//min-width:250px;
+	width:240px;
+	padding-left:10px;
+	border:1px solid $inactive-form-field-border;
+	color:$inactive-form-field-text-color;
+    &:focus{
+    	border:1px solid $focus-form-field-border;
+        color:$focus-form-field-text-color !important;
+    }
+}
+
+select{
+ 	padding: 3px 0;
+    width: 100%;
+    option{
+    	padding:3px;
+    }
+}
+.specific-dropdown{
+	select{
+		width:42%;
+	}
+}
+
+// 20 june
+.checkbox {
+            display: inline-block !important;
+            cursor: pointer;
+            margin: 0px !important;       
+            padding:0;       
+        }
+
+input[type='checkbox']{ /* changed 14 june */
+	/*display:none;
+	position: relative;
+	top: 2px;
+	left: 5px;*/
+
+}
+
+.recieve-update-cb {
+    top: 3px;
+    left: 5px;
+    position: relative;
+}
+
+.checkbox:before {
+            content: "";	
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+            background-color: white;
+            color: black;
+            text-align: center;
+            border: 1px solid #D3D3D3;
+        }
+
+input[type='checkbox']:checked + .checkbox:before {
+    content: "\2714";
+    background-color:white;
+    font-size: 12px;
+    line-height:13px;
+    z-index:999;
+}
+
+.pos-chk-box{
+	width: 15px;
+    position: relative;
+    bottom: 2px;
+}
+//----20 june----
+
+.input-completed{
+	color:#144b94;
+	border:1px solid #144b94;
+}
+
+/* 14 june*/
+
+input[placeholder] {
+	color: $placeholder-text !important;
+}
+input::-webkit-input-placeholder {
+  color: $placeholder-text !important;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+input::-moz-placeholder {
+  color: $placeholder-text !important;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+  color: $placeholder-text !important;
+}
+input:-ms-input-placeholder { 
+  color: $placeholder-text !important;
+}
+/*  */
+
+.select-completed {
+	
+.dropdown-up-style{
+	padding: 21px 13px;
+	@include background-image(linear-gradient($inactive-form-field-dropdown-gradient-from , $inactive-form-field-dropdown-gradient-to));
+	width: 41px;
+	height: 10px;
+	position: absolute;
+	bottom: 1px;
+	left: 167px;
+}
+.dropdown-up {
+	width: 0; 
+	height: 0; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #000;
+	vertical-align: middle;
+}
+
+.dropdown-up-style-dup{
+	padding: 21px 13px;
+    @include background-image(linear-gradient($completed-form-field-dropdown-gradient-from,$completed-form-field-dropdown-gradient-to));
+    width: 41px;
+	height: 10px;
+	position: absolute;
+	bottom: 1px;
+	left: 167px;
+}
+.dropdown-up-dup {
+	width: 0; 
+	height: 0; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #fff;
+	vertical-align: middle;	
+}
+	
+	
+}
+
+.specific-input{
+	width:150px !important;
+}
